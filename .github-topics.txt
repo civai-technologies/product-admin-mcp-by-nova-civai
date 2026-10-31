@@ -1,0 +1,17 @@
+mcp
+model-context-protocol
+mcp-server
+nova-by-civai
+civai
+cursor
+claude-desktop
+streamable-http
+remote-mcp
+gemini-cli-extension
+product-management
+payments
+bank-transfer
+deposits
+reconciliation
+product
+admin
