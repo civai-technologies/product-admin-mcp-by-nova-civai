@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "product-admin-by-nova",
+  "displayName": "Product Admin by Nova (CIVAI)",
+  "version": "1.1.0",
+  "description": "I manage your Nova products, create/update/delete, payment & logistics config, icons, webhook secrets, bank-transfer onboarding, and deposit/bank-credit reconciliation",
+  "author": {
+    "name": "CIVAI TECHNOLOGIES",
+    "email": "nifemialpine@nova.civai.co",
+    "url": "https://nova.civai.co"
+  },
+  "homepage": "https://nova.civai.co/agent/product-admin",
+  "repository": "https://github.com/civai-technologies/product-admin-mcp-by-nova-civai",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "payments",
+    "bank-transfer",
+    "deposits",
+    "reconciliation"
+  ],
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://nova.civai.co/agent/product-admin",
+  "supportUrl": "https://nova.civai.co/api-keys",
+  "privacyPolicyUrl": "https://nova.civai.co/privacy",
+  "termsOfServiceUrl": "https://nova.civai.co/terms",
+  "userConfig": {
+    "nova_api_key": {
+      "type": "string",
+      "title": "Nova API key",
+      "description": "Programmatic Nova API key from https://nova.civai.co/api-keys",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "product-admin-by-nova": {
+      "type": "http",
+      "url": "https://nova.civai.co/mcp/agents/product-admin",
+      "headers": {
+        "Authorization": "Bearer ${user_config.nova_api_key}"
+      }
+    }
+  }
+}

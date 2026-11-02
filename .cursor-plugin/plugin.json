@@ -1,0 +1,41 @@
+{
+  "name": "product-admin-by-nova",
+  "version": "1.1.0",
+  "description": "I manage your Nova products, create/update/delete, payment & logistics config, icons, webhook secrets, bank-transfer onboarding, and deposit/bank-credit reconciliation",
+  "author": {
+    "name": "CIVAI TECHNOLOGIES",
+    "email": "nifemialpine@nova.civai.co"
+  },
+  "homepage": "https://nova.civai.co/agent/product-admin",
+  "repository": "https://github.com/civai-technologies/product-admin-mcp-by-nova-civai",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "mcp",
+    "nova-by-civai",
+    "civai",
+    "cursor",
+    "mcp-server",
+    "product-management",
+    "payments",
+    "bank-transfer",
+    "deposits",
+    "reconciliation"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "NOVA_API_KEY": {
+        "type": "string",
+        "title": "Nova API key",
+        "description": "Programmatic JWT from https://nova.civai.co/api-keys"
+      }
+    },
+    "required": [
+      "NOVA_API_KEY"
+    ]
+  },
+  "skills": [
+    "skills/product-admin"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "product-admin",
+  "version": "1.0.0",
+  "description": "I manage your Nova products, create/update/delete, payment & logistics config, icons, webhook secrets, bank-transfer onboarding, and deposit/bank-credit reconciliation",
+  "mcpServers": {
+    "product-admin-by-nova": {
+      "httpUrl": "https://nova.civai.co/mcp/agents/product-admin",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  }
+}

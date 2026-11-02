@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "co.civai.nova/product-admin",
+  "title": "Product Admin by Nova (CIVAI)",
+  "description": "I manage your Nova products, create/update/delete, payment & logistics config, icons, webhook secre…",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/product-admin"
+    }
+  ],
+  "websiteUrl": "https://nova.civai.co/agent/product-admin",
+  "icons": [
+    {
+      "src": "https://nova.civai.co/catalog-icons/NoteIcon.svg"
+    }
+  ]
+}

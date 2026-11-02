@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "product-admin-by-nova": {
+      "url": "https://nova.civai.co/mcp/agents/product-admin",
+      "headers": {
+        "Authorization": "Bearer ${NOVA_API_KEY}"
+      }
+    }
+  }
+}
